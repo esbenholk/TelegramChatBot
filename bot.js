@@ -19,9 +19,9 @@ if (process.env.NODE_ENV === 'production') {
 
 }
 
-bot.onText(jki343, (msg) => {
+bot.onText(/\/start/, (msg) => {
 
-  bot.sendMessage(msg.chat.id, "Welcome Human User: " + msg.chat.first_name + " i love u💖");
+  bot.sendMessage(msg.chat.id, "Welcome Human User: " + msg.chat.first_name + ", i love you 💖");
   bot.sendChatAction(
     msg.chat.id,
     "typing"
